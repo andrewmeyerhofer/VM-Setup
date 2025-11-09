@@ -27,7 +27,7 @@ In this project, my main goal was to create two virtual machines using Microsoft
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I started by creating a resource group in Microsoft Azure. 
 </p>
 <br />
 
@@ -36,7 +36,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-After information was inputted, I pressed review/create.
+In the creation screen, I chose the subscription I wanted to use, named the resource group, and chose the region. After the information was inputted, I pressed review/create.
 </p>
 <br />
 
@@ -46,7 +46,7 @@ After information was inputted, I pressed review/create.
 
 </p>
 <p>
-I looked up "Virtual Network" in the Azure search bar, and clicked the create button. The Vnet would be create by itself when I create the virtual machine, but I decided to make it on my own first (change this). Also clicked review+create.
+I then looked up "Virtual Network" in the Azure search bar, and clicked the create button. Creating a Vnet before creating the Virtual Machine is unnecessary, but I did it for the sake of experience. After entering the correct details I clicked review/create.
 </p>
 <br />
 
@@ -55,7 +55,7 @@ I looked up "Virtual Network" in the Azure search bar, and clicked the create bu
 
 </p>
 <p>
-I searched for Virtual Machine then clicked create, choosing the first option for a basic virtual machine. This VM is for the domain controller.
+I searched for Virtual Machine then clicked create, choosing the first option for a basic virtual machine. This VM is for the domain controller. next
 </p>
 <br />
 
