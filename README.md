@@ -46,7 +46,7 @@ In the creation screen, I chose the subscription I wanted to use, named the reso
 
 </p>
 <p>
-I then looked up "Virtual Network" in the Azure search bar, and clicked the create button. Creating a Vnet before creating the Virtual Machine is unnecessary, but I did it for the sake of experience. After entering the correct details I clicked review/create.
+I then looked up "Virtual Network" in the Azure search bar, and clicked the create button. After entering the correct details and giving the Vnet a name, I clicked review/create.
 </p>
 <br />
 
@@ -55,7 +55,7 @@ I then looked up "Virtual Network" in the Azure search bar, and clicked the crea
 
 </p>
 <p>
-I searched for Virtual Machine then clicked create, choosing the first option for a basic virtual machine. This VM is for the domain controller. next
+Next, I searched for "Virtual Machine" then clicked create, choosing the first option for a basic virtual machine. I entered the details and named this VM "dc-1" (Domain Controller 1). I used this VM to simulate a Domain Controller in the upcoming Active Directory Projects.
 </p>
 <br />
 
@@ -64,7 +64,7 @@ I searched for Virtual Machine then clicked create, choosing the first option fo
 
 </p>
 <p>
-I also set a username and password for the VM.
+I then set the Image and Size of the VM, and created a username and password.
 </p>
 <br />
 
@@ -73,7 +73,7 @@ I also set a username and password for the VM.
 
 </p>
 <p>
-Also clicked review+create
+Next, I went to the Networking tab and assigned the Vnet I created to this VM. I kept all the other settings for the VM at their default, then clicked review/create.
 </p>
 <br />
 
@@ -82,7 +82,7 @@ Also clicked review+create
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After the dc-1 VM was created, I went through the same VM creation process again. This time I created a VM called "client-1," which will serve as my end-user for the Active Directory projects. 
 </p>
 <br />
 
@@ -91,7 +91,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Also set username and password. I put this VM in the Active-Directory-Vnet aswell. Everything else is the same as dc-1 VM. Clicked review+create.
+I then set the Image and Size for the VM, this time configuring it like a common end-user's computer. I Also set a username and password and put this VM in the Active-Directory-Vnet. Everything else was left default or the same as dc-1.
 </p>
 <br />
 
