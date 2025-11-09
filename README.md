@@ -100,7 +100,7 @@ I then set the Image and Size for the VM, this time configuring it like a common
 
 </p>
 <p>
-Private IP-address for dc-1 needs to be static so I can manually configure the settings of client-1 to use dc-1 as it's dns server. I clicked the dc-1 VM and went to the Network Settings tab. Once there, I clicked the link to edit the Network Interface Card (NIC).
+Next, I needed to make the Private IP-address for dc-1 static so I could configure it as the dns server for client-1. I clicked the dc-1 VM and went to the Network Settings tab. Once there, I clicked the link to edit the Network Interface Card (NIC).
 </p>
 <br />
 
@@ -109,7 +109,7 @@ Private IP-address for dc-1 needs to be static so I can manually configure the s
 
 </p>
 <p>
-I clicked the link for "ipconfig1" which opened the edit tab. I changed the private IP address allocation from dynamic to static then clicked save.
+I then clicked the link for "ipconfig1" which opened the IP configuration edit tab. I changed the private IP address allocation from dynamic to static then clicked the save button.
 </p>
 <br />
 
