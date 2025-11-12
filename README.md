@@ -100,7 +100,7 @@ I then set the Image and Size for the VM, this time configuring it like a common
 
 </p>
 <p>
-Next, I needed to make the Private IP-address for dc-1 static so I could configure it as the dns server for client-1. I clicked the dc-1 VM and went to the Network Settings tab. Once there, I clicked the link to edit the Network Interface Card (NIC).
+Next, I needed to make the Private IP-address for dc-1 static so I could configure it as the DNS server for client-1. I clicked the dc-1 VM and went to the Network Settings tab. Once there, I clicked the link to edit the Network Interface Card (NIC).
 </p>
 <br />
 
@@ -127,7 +127,7 @@ The Private IP address is now listed as static.
 
 </p>
 <p>
-Next I went to log into the dc-1 VM using remote desktop. I entered the public IP address into the Windows remote connection, then logged in with the username and password I created.
+Next, I logged into the dc-1 VM using remote desktop. I entered the public IP address into Windows remote connection, then logged in with the username and password I created.
 </p>
 <br />
 
@@ -136,7 +136,7 @@ Next I went to log into the dc-1 VM using remote desktop. I entered the public I
 
 </p>
 <p>
-Server Manager imediately opens upon logging in. I needed to disable the Windows firewall settings (not smart in real life, just for the sake of this project). I opened "Run" from the start menu and typed wf.msc. 
+Upon logging into dc-1, Server Manager imediately opens. From here, I needed to disable the Windows firewall settings on the VM (not smart in real life, just for the sake of this project). I opened "Run" from the start menu and typed wf.msc. 
 </p>
 <br />
 
@@ -145,7 +145,7 @@ Server Manager imediately opens upon logging in. I needed to disable the Windows
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Windows Defender Firewall with Advanced Security opened.
 </p>
 <br />
 
@@ -154,7 +154,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-I clicked properties and clicked off for the firewall state for the domain, public, and private profiles. Clicked apply then OK.
+From there, I clicked the "Windows Defender Firewall Properties" button and selected off in the dropdown for firewall state (in the Domain Profile tab). I then went to the tabs for Public and Private profiles and selected off as well. Finally, I clicked Apply and OK to save the setting changes.
 </p>
 <br />
 
@@ -163,7 +163,7 @@ I clicked properties and clicked off for the firewall state for the domain, publ
 
 </p>
 <p>
-I acquired dc-1's private IP address from Azure. I then went to the network settings of client-1 and clicked the NIC link. I went to the DNS servers section and changed the DNS server to dc-1's private IP address. Doing this joins the domain of both VMs. I then clicked the save button.
+Next, I exited the VM and went back to Azure so I could configure the DNS server for client-1. I started by copying dc-1's private IP address from it's VM settings. After that, I went to the network settings of client-1 and clicked the NIC link. Finally, I went to the DNS servers section and pasted dc-1's private IP address as a custom DNS server. Doing this joined the domain of both VMs.
 </p>
 <br />
 
@@ -172,7 +172,7 @@ I acquired dc-1's private IP address from Azure. I then went to the network sett
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I then went to the VM overview menu and selected the restart option for client-1.
 </p>
 <br />
 
@@ -181,7 +181,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-I then logged into client-1's VM in order to ping dc-1. 
+Now that everything was configured, I logged into client-1's VM in order to attempt a ping of dc-1. 
 <br />
 
 <p>
@@ -189,7 +189,7 @@ I then logged into client-1's VM in order to ping dc-1.
 
 </p>
 <p>
-I opened Powershell in client-1 and pinged the private IP address of dc-1. 
+Once I was in client-1, I opened Powershell and pinged the private IP address of dc-1. The ping succeeded. 
 </p>
 <br />
 
@@ -198,6 +198,6 @@ I opened Powershell in client-1 and pinged the private IP address of dc-1.
 
 </p>
 <p>
-Private IP address should show 10.0.0.4 after using ipconfig /all. This concludes the VM setup for the Active Directory project.
+Finally, I used the ipconfig /all command and 10.0.0.4 showed up successfully as the DNS server. This concludes the VM setup project.
 </p>
 <br />
