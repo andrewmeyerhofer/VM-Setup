@@ -136,7 +136,7 @@ Next, I logged into the dc-1 VM using remote desktop. I entered the public IP ad
 
 </p>
 <p>
-Upon logging into dc-1, Server Manager imediately opens. From here, I needed to disable the Windows firewall settings on the VM (not smart in real life, just for the sake of this project). I opened "Run" from the start menu and typed wf.msc. 
+Upon logging into dc-1, Server Manager imediately opened. From here, I needed to disable the Windows firewall settings on the VM (not smart in real life, just for the sake of this project). I opened "Run" from the start menu and typed wf.msc. 
 </p>
 <br />
 
